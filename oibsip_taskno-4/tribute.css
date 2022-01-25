@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#main {
+  border-radius: 6px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+#title {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  word-spacing: 2px;
+  align-self: center;
+  font-size: 3em;
+  font-weight: bolder;
+  text-shadow: 1px 2px 3px #f03c3c;
+  font-family: "Monda", sans-serif;
+}
+.alpha {
+  text-decoration: none;
+  color: blue;
+}
+
+.google {
+  text-decoration: none;
+  color: red;
+}
+#sub-title {
+  margin: 15px;
+  font-size: 1em;
+  font-weight: 500;
+  color: rgb(80, 78, 78);
+  align-self: center;
+}
+#img-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 60%;
+}
+.img-info {
+  background-color: white;
+  display: flex;
+}
+#image {
+  padding: 3%;
+  width: 96%;
+  height: 110%;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  animation: example2 4s alternate;
+  animation-iteration-count: 3;
+}
+.info {
+  width: 40%;
+}
+#tribute-info {
+  font-size: 1.1em;
+  margin: 90px 48px;
+  padding: 6px;
+  line-height: 1.5em;
+  opacity: 0.8;
+  transition: ease-in 3s;
+  transition-delay: 1s;
+}
+#tribute-info li {
+  padding: 4px;
+}
+
+#tribute-heading-1 {
+  align-self: center;
+  margin-top: 55px;
+  opacity: 0.9;
+  font-size: 2.6em;
+  color: rgb(228, 36, 36);
+  text-shadow: 2px 2px 1px black;
+}
+
+.about {
+  display: block;
+  margin: 1em;
+  text-indent: 40px;
+  padding: 8px;
+  line-height: 26px;
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bold;
+}
+
+.android {
+  height: 50%;
+  width: 50%;
+  margin: 14px 400px;
+  box-shadow: 8px 10px 12px rgb(95, 93, 93);
+}
+.android-about {
+  text-align: center;
+  opacity: 0.7;
+}
+
+#tribute-heading-2 {
+  align-self: center;
+  color: rgb(228, 36, 36);
+  font-size: 2.6em;
+  margin-top: 55px;
+  text-shadow: 2px 2px 1px black;
+}
+
+.career {
+  display: block;
+  margin: 1em;
+  text-indent: 70px;
+  line-height: 26px;
+  padding: 10px;
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bold;
+}
+
+#tribute-heading-3 {
+  align-self: center;
+  margin-top: 60px;
+  color: rgb(228, 36, 36);
+  text-shadow: 2px 1px 1px black;
+}
+.test {
+  display: block;
+  margin: 1em;
+  text-indent: 70px;
+  line-height: 26px;
+  padding: 10px;
+  font-family: "Source Serif 4", sans-serif;
+  font-weight: bold;
+}
+.awards {
+  margin-left: 20px;
+}
+#awards-info {
+  margin: 4px 40px;
+}
+
+#quotes {
+  font-size: 1em;
+  font-style: oblique;
+  margin: 16px 70px;
+  text-align: center;
+  margin-top: 50px;
+  color: rgb(156, 16, 16);
+  font-weight: bold;
+  animation: example 4s alternate;
+  animation-iteration-count: infinite;
+  padding: 5px;
+}
+#by {
+  margin: 0px 70px;
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+    color: white;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes example2 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 96%;
+  }
+}

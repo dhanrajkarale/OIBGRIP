@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 60px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgba(255, 125, 4, 0.788);
+  
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Navigation bar: Logo and Image */
+#logo {
+    margin: 10px 8px;
+   left: 50%;
+}
+
+#logo img {
+    height: 55px;
+    margin: 10px 18px;
+    transition: all 1s ease-in-out;
+}
+
+#logo1{
+    margin: 10px 8px;
+  margin-left: 788px;
+}
+
+#logo1 img  {
+    height: 35px;
+    margin: 5px 5px;
+    transition: all 1s ease-in-out;
+}
+#logo1 img:hover  {
+    height: 40px;
+    cursor: pointer;
+}
+
+#logo img:hover{
+    transform: rotate(360deg);
+}
+
+
+/* Navigation Bar: List styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 15px;
+
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 6px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3PX 200px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home::before {
+    content: " ";
+    background: url('/pic/bg2.jpg') no-repeat center center/ cover;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+   opacity: 0.7;
+}
+
+#home h1 {
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Servives Section */
+#services {
+    display: flex;
+    margin: 50px 40px;
+   
+}
+
+.h-primary-services{
+    margin-top: 150px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    width: 100%;
+    white-space: nowrap;  
+    animation: move 10s alternate infinite ;
+   
+}
+
+@keyframes move {
+    from{
+        width: 0;
+        
+         }
+    to { 
+        width: 60%;
+        transform: translate(100%); }
+      
+  }
+
+#services .box {
+    border: 2px solid green;
+    padding: 10px;
+    margin: 3px 30px;
+    border-radius: 25px;
+    background-color: rgb(255, 227, 185);
+    
+}
+
+#services .box:hover {
+    background-color: white;
+   border: 2px solid orangered;
+   box-shadow: 10px 16px 10px  #313030;
+   
+}
+
+#services .box img {
+    height: 120px;
+    margin:  auto;
+    display: block;
+}
+
+#services .box p {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Client Section */
+#client-section {
+    height: 300px;
+    margin:  120px 10px;
+}
+
+#client-section::before {
+   content: "";
+   position: absolute;
+   background: url('/pic/bg2.jpg') no-repeat center center/ cover;
+   width: 100%;
+   height: 40%;
+   z-index: -1;
+   opacity: 0.6;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 0 20px;
+    margin-top: 15px ;
+}
+
+#clients img {
+    height: 90px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+     content: "";
+     position: absolute;
+     background: url('/pic/contact.png') no-repeat center center/cover;
+     width: 100%;
+     height: 90%;
+     z-index: -1;
+     opacity: 0.7;
+    margin: 25px 10px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+#contact-box input,
+#contact-box textarea{
+     width: 100%;
+     padding: 5px;
+     border-radius: 10px;
+
+}
+
+#contact-box form{
+    width: 30%;
+}
+
+#contact-box label{
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 6px;
+    margin: 20px 2px;
+}
+
+
+/* Utility classes */
+.h-primary {
+    font-size: 3rem;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    animation: animate2 3s ease-out ;
+    margin-top: 50px;
+}
+
+@keyframes animate2{
+    
+        from{font-size: 1rem;}
+        to {font-size: 3rem;}
+    
+}
+.h-secondary {
+    font-size: 2rem;
+    padding: 20px;
+    font-family: 'IM Fell English SC', serif;
+}
+
+
+.btn {
+    padding: 5px 20px;
+    border: 2px solid black;
+    border-radius: 8px; 
+    background-color: rgba(255, 125, 4, 0.904);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 48px auto;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+   
+}
+
+.btn:hover{
+    height: 60px;
+    width: 170px;
+    background-color: rgba(4, 199, 4, 0.911);
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+hr{
+    margin-top: 50px;
+}
+.submit{
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 3px;
+   
+}

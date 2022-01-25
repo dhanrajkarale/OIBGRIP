@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+
+/*********************************** CSS for main page **************************************/
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.container{
+    display: flex;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(248, 190, 0);
+    width: 190px;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+    height: 220vh;
+    /* opacity: 0.8; */
+    transition: transform 0.3s ease-in;
+    box-shadow: 10px 10px 10px rgb(141, 140, 94);
+}
+
+.sidebar nav{
+     padding: 30px;
+}
+
+.sidebar nav li{
+     list-style: none;
+     font-size: 20px;
+     padding: 25px 0;
+     margin: 20px 16px;
+}
+
+.sidebar nav li a:hover{
+    background-color: black;
+    color: rgb(248, 190, 0);
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2px 10px;
+}
+.sidebar nav li a{
+ text-decoration: none;  
+ color: black;
+}
+
+.main{
+    /* background-color: yellow; */
+    
+    width:  88vw;
+}
+
+.infoContainer{
+    
+    display: flex;
+    margin: 120px 158px;
+    /* background-color: green; */
+    height: 50vh;
+    width: 80vw;
+    /* justify-content: space-around; */
+}
+
+.info{
+
+    font-size: 2.8em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.name{
+    font-size: 2.5em;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Orelega One', cursive;
+    /* font-weight: bold ; */
+}
+.about{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.moreAbout{
+    font-size: 1em;
+    font-family: 'Baloo Bhai 2', cursive;
+    /* margin-bottom: 6px; */
+}
+
+.button{
+    margin-top: 10px 10px;
+   font-size: 14px;
+   
+}
+
+.btn{
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  margin: 30px 10px;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: rgb(250, 175, 15);
+  box-shadow: 4px 6px 6px rgb(54, 53, 53);
+  
+}
+
+.btn:hover{
+    padding: 8px;
+    background-color: black;
+    color:rgb(250, 175, 15) ;
+}
+.userPic img{
+   height: 345px;
+   /* margin: 40px 50px; */
+   margin-top: 10px;
+   margin-left: 150px;
+}
+
+.userInfo{
+    
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    margin: 178px 10px;
+    padding: 20px;
+    /* font-family: 'EB Garamond', serif;*/
+} 
+
+
+/****************************CSS for Contact page *************************************/
+
+.contactForm{
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    padding: 0 70px;
+    padding-top: 90px;
+    
+    margin-left: 200px;
+   
+}
+
+.contactForm h1{
+  
+   margin-left: 420px;
+   margin-top: -15px;
+   font-size: 46px;
+}
+.contactForm form div{
+    font-family: 'Orelega One', cursive;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    margin: 10px 0px;
+    font-size: 20px;
+   
+}
+
+.contactForm form div input{
+   width: 60vh;
+   padding: 4px;
+   margin: 6px 0 ;
+   border-radius: 4px;
+}
+#emailHelp{
+   color: rgb(210, 30, 30);
+   font-size: 14px;
+}
+
+/****************************CSS for MyIntro page *************************************/
+
+.aboutMe{
+    margin-left: 250px;
+    padding: 10px;
+    padding-top: 32px;
+}
+
+.aboutMe h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+.para1{
+   padding: 8px;
+   /* background-color: red; */
+   font-size: 1.1em;
+   margin-top: 10px;
+   font-family: 'Baloo Bhai 2', cursive;
+   color: rgb(134, 60, 6);
+}
+.para1 li{
+   padding: 3px;
+ }
+
+.skillContainer{
+    display: flex;
+    margin: 2px 500px;
+    justify-content: space-between;
+    width: 40%;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: rgb(134, 60, 6);
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+.skillh2-1{
+  margin: 80px 700px;
+   /* background-color: red; */
+   font-size:  2.9em;;
+    width: 50%;
+}
+.skillh2-2{
+    margin-left: 700px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+     /* background-color: red; */
+     font-size:  2.9em;;
+      width: 50%;
+  }
+.skill1{
+    margin-left: 60px;
+    
+}
+
+.skill2{
+    margin-left: 350px;
+}
+
+/* *****************Education ********************* */
+.engg {
+    display: flex;
+    flex-direction: column;
+    background-color: saddlebrown;
+    color: white;
+    height: 200px;
+    width: 450px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px 330px;
+}
+.hsc {
+    display: flex;
+    flex-direction: column;
+    background-color: saddlebrown;
+    color: white;
+    height: 200px;
+    width: 450px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 5px 850px;
+}
+
+.ssc {
+    display: flex;
+    flex-direction: column;
+    background-color: saddlebrown;
+    color: white;
+    height: 200px;
+    width: 450px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px 330px;
+}
+
+.engg h4{
+    text-align: center;
+   
+    margin-top: 36px;
+    height: max-content;
+    font-size: 20px;
+}
+
+.engg h5{
+   margin: 8px 110px;
+   font-size: 14px;
+}
+
+.year1{
+    display: flex;
+    height: 50%;
+     width:50%;
+    margin: 5px 150px;
+}
+.year1 img{
+    margin-top: 2px;
+    margin-left: 12px;
+    height: 16px;
+    width: 16px;
+}
+.year1 p{
+    margin-top: 2px;
+    margin-left: 14px;
+    font-size: 14px;
+}
+
+.score1{
+    margin-left: 180px;
+    margin-bottom: 200px;
+    font-size: 12px;
+}
+
+.hsc h4{
+    text-align: center;
+   
+    margin-top: 36px;
+    height: max-content;
+    font-size: 20px;
+}
+.hsc h5{
+    margin: 8px 90px;
+    font-size: 14px;
+ }
+ .year2{
+    display: flex;
+    height: 50%;
+     width:50%;
+    margin: 5px 150px;
+}
+.year2 img{
+    margin-top: 2px;
+    margin-left: 10px;
+    height: 16px;
+    width: 16px;
+}
+.year2 p{
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.score2{
+    margin-left: 164px;
+    margin-bottom: 200px;
+    font-size: 12px;
+}
+
+.ssc h4{
+    text-align: center;
+   
+    margin-top: 36px;
+    height: max-content;
+    font-size: 20px;
+}
+.ssc h5{
+    margin: 8px 68px;
+    font-size: 14px;
+ }
+ .year3{
+    display: flex;
+    height: 50%;
+     width:50%;
+    margin: 5px 150px;
+}
+.year3 img{
+    margin-top: 2px;
+    margin-left: 10px;
+    height: 16px;
+    width: 16px;
+}
+.year3 p{
+    margin-top: 2px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.score3{
+    margin-left: 190px;
+    margin-bottom: 200px;
+    font-size: 12px;
+}
+.engg:hover{
+    box-shadow: 10px 10px 10px rgb(4, 5, 3);
+}
+.hsc:hover{
+    box-shadow: 10px 10px 10px rgb(4, 5, 3);
+}
+.ssc:hover{
+    box-shadow: 10px 10px 10px rgb(4, 5, 3);
+}
+
+ 
+/* *********************************** */
+
+.sidebarGo{
+    transform: translate(-213px, 0px);
+    position: absolute;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 14px;
+}
+
+.cancel{
+    margin-left: 144px;
+}
+
+@media (max-width:1000px){
+/*   
+    .sidebar{
+        transform: translate(-213px, 0px);
+        position: absolute;
+    }
+     */
+     .userInfo{
+         font-size: 10px;
+     }
+     .userPic{
+         display: none;
+     }
+
+     .contactForm h1{
+        font-family: 'Orelega One', cursive;
+        margin-left: 60px;
+       font-size: 26px;
+    }
+    .contactForm{
+        padding-top: 30px;
+        font-size: 10px;
+       margin-left: 20px;
+    }
+    .contactForm form div input{
+        width: 25vh;
+        padding: 1px;
+        margin: 3px 0 ;
+        border-radius: 2px;
+     }
+     .links{
+    
+        margin-top: 20px;
+        margin-left: 20px;
+      
+    }
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+   margin-left: 340px;
+  /* background-color: red; */
+}
+
+.links img{
+   height: 2.5rem;
+   width: 2.5rem;
+   padding: 18px;
+}
+.links img:hover{
+    height: 3rem;
+    width: 3rem;
+    padding: 0 40px;
+ }
+
+/* ************************************ Services Page***************************** */
+.service-h1{
+    text-align: center;
+    font-size: 2.9em;
+    margin: 50px 720px;
+    width: 20%;
+}
+
+.servicesContainer{
+    display: flex;
+    height: 130%;
+    width: 98%;
+    /* background-color: yellow; */
+    margin-left: 180px;
+    margin-right: 150px;
+}
+
+.service1{
+  background-color: rgb(253, 123, 17);
+  height: 500px;
+  width: 600px;
+  margin: 70px 40px;
+  border: 4px solid black;
+  border-radius: 20px;
+  box-shadow: 8px 10px 8px rgb(66, 65, 65);
+}
+
+
+.service2{
+background-color: green;
+height: 500px;
+width: 600px;
+margin: 70px 2px;
+border: 4px solid black;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 8px 10px 8px rgb(66, 65, 65);
+
+}
+
+.service1 h2{
+   margin: 20px 130px;
+   /* padding: 10px; */
+   font-size: 2.4em;
+   width: 100%;
+   font-family: 'Source Serif Pro', serif;
+}
+
+.service2 h2{
+    margin: 22px 106px;
+   /* padding: 10px; */
+   font-size: 2.4em;
+   width: 100%;
+   font-family: 'Source Serif Pro', serif;
+}
+.service1 img{
+    margin-top: 25px;
+    margin-left: 230px;
+    height: 110px;
+    width: 110px;
+}
+
+.service2 img{
+    margin-top: 20px;
+    margin-left: 230px;
+    height: 120px;
+    width: 120px;
+}
+ .roles1{
+     padding: 10px;
+     font-size: 1.2em;
+     margin: 10px 50px;
+ }
+
+ .roles1 li{
+     padding: 5px;
+ }
