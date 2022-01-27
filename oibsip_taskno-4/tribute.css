@@ -8,7 +8,8 @@
 }
 #main {
   border-radius: 6px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
+  background-image: linear-gradient(to bottom right, rgb(241, 126, 207), rgb(75, 250, 250));
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -58,7 +59,7 @@
   margin-bottom: 20px;
   margin-top: 12px;
   animation: example2 4s alternate;
-  animation-iteration-count: 3;
+  animation-iteration-count: 1;
 }
 .info {
   width: 40%;
@@ -68,9 +69,10 @@
   margin: 90px 48px;
   padding: 6px;
   line-height: 1.5em;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   transition: ease-in 3s;
   transition-delay: 1s;
+  color: brown;
 }
 #tribute-info li {
   padding: 4px;
